@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Café Lumière</title>
+    <title>Café Lumière | 2026 Experience</title>
 </head>
-
 <body>
-    <header class="site-header">
+    <div class="ambient-background"></div>
+
+    <header class="site-header glass">
         <div class="header-container">
             <div class="logo">Café Lumière</div>
             <nav class="nav-menu">
-                <a href="#hero">Anasayfa</a>
-                <a href="#about-us">Hakkımızda</a>
-                <a href="#menu-section">Menü</a>
-                <a href="#galeri">Galeri</a>
-                <a href="#contact-map">İletişim</a>
+                <a href="#hero" class="hover-underline">Anasayfa</a>
+                <a href="#about-us" class="hover-underline">Hakkımızda</a>
+                <a href="#menu-section" class="hover-underline">Menü</a>
+                <a href="#galeri" class="hover-underline">Galeri</a>
+                <a href="#contact-map" class="hover-underline">İletişim</a>
             </nav>
             <div class="hamburger">
                 <span></span>
@@ -28,466 +28,194 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="hero" id="hero">
-        <h1 class="hero-title">
-            <i class="fa-solid fa-mug-saucer"></i> Café Lumière
-        </h1>
-        <p class="hero-subtitle">
-            Her <span class="hero-highlight">Fincanda</span> Bir
-            <span class="hero-highlight">Hikaye</span>
-        </p>
+        <div class="hero-content reveal fade-bottom">
+            <h1 class="hero-title">
+                <i class="fa-solid fa-mug-saucer"></i> Café Lumière
+            </h1>
+            <p class="hero-subtitle">
+                Her <span class="text-gradient">Fincanda</span> Bir <span class="text-gradient">Hikaye</span>
+            </p>
 
-        <div class="hero-call">
-            <a href="https://wa.me/905555555555" class="btn-reserve whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp ile Rezervasyon
-            </a>
+            <div class="hero-actions">
+                <a href="https://wa.me/905555555555" class="btn-glow whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Rezervasyon
+                </a>
+                <a href="tel:+905555555555" class="btn-outline phone">
+                    <i class="fa-solid fa-phone"></i> Telefonla Ara
+                </a>
+            </div>
 
-            <a href="tel:+905555555555" class="btn-reserve phone">
-                <i class="fa-solid fa-phone"></i> Telefon ile Rezervasyon
-            </a>
-        </div>
-
-        <p class="hero-describe">
-            Hafta içi <span class="hero-highlight">12:00-22:30</span> ve hafta sonu
-            <span class="hero-highlight">14:30-22:30</span>
-            saatleri arasında yeni eklenen lezzetlerimizi keşfedin.
-        </p>
-    </section>
-
-    <!-- KNOW US SECTION -->
-    <section class="know-us">
-        <h1 class="know-us-title">Mekanımızı Keşfedin</h1>
-
-        <div class="know-us-cards">
-
-            <a href="#menu-section" class="know-link">
-                <div class="know-us-card">
-                    <img src="https://images.unsplash.com/photo-1670954951673-da8efc637ca7?q=80&w=687&auto=format&fit=crop"
-                        alt="Menümüz">
-                    <h3>Menümüz</h3>
-                </div>
-            </a>
-
-            <a href="#galeri" class="know-link">
-                <div class="know-us-card">
-                    <img src="https://images.unsplash.com/photo-1518739745383-0ef26e9dd7fd?q=80&w=1142&auto=format&fit=crop"
-                        alt="Dış Mekanımız">
-                    <h3>Dış Mekanımız</h3>
-                </div>
-            </a>
-
-            <a href="#galeri" class="know-link">
-                <div class="know-us-card">
-                    <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=1170&auto=format&fit=crop"
-                        alt="İç Mekanımız">
-                    <h3>İç Mekanımız</h3>
-                </div>
-            </a>
-
+            <p class="hero-describe glass-card">
+                Hafta içi <span>12:00-22:30</span> | Hafta sonu <span>14:30-22:30</span><br>
+                Yeni eklenen lezzetlerimizi keşfedin.
+            </p>
         </div>
     </section>
 
+    <section class="know-us section-padding">
+        <div class="container text-center">
+            <h2 class="section-title reveal fade-bottom">Mekanımızı Keşfedin</h2>
+            <div class="know-us-cards">
+                <a href="#menu-section" class="know-link reveal fade-left" style="transition-delay: 0.1s;">
+                    <div class="know-us-card image-zoom">
+                        <img src="https://images.unsplash.com/photo-1670954951673-da8efc637ca7?q=80&w=687&auto=format&fit=crop" alt="Menümüz">
+                        <div class="card-overlay"><h3>Menümüz</h3></div>
+                    </div>
+                </a>
+                <a href="#galeri" class="know-link reveal fade-bottom" style="transition-delay: 0.2s;">
+                    <div class="know-us-card image-zoom">
+                        <img src="https://images.unsplash.com/photo-1518739745383-0ef26e9dd7fd?q=80&w=1142&auto=format&fit=crop" alt="Dış Mekanımız">
+                        <div class="card-overlay"><h3>Dış Mekanımız</h3></div>
+                    </div>
+                </a>
+                <a href="#galeri" class="know-link reveal fade-right" style="transition-delay: 0.3s;">
+                    <div class="know-us-card image-zoom">
+                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=1170&auto=format&fit=crop" alt="İç Mekanımız">
+                        <div class="card-overlay"><h3>İç Mekanımız</h3></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <!-- ABOUT US -->
-    <section class="about-us" id="about-us">
-        <div class="about-us-container">
-
-            <div class="about-us-left-side">
-                <h1 class="about-us-title">Hakkımızda</h1>
-                <h2 class="about-us-subtitle">Café Lumière Kim?</h2>
+    <section class="about-us section-padding" id="about-us">
+        <div class="container about-us-container">
+            <div class="about-us-left-side reveal fade-left">
+                <span class="badge">Hakkımızda</span>
+                <h2 class="about-us-subtitle text-gradient">Café Lumière Kim?</h2>
                 <h3 class="about-us-mintitle">
                     Her fincanda bir hikaye sunan, samimi ve huzurlu atmosferiyle Café Lumière’ye hoş geldiniz.
                 </h3>
-
                 <p class="about-us-description">
-                    Café Lumière, özenle hazırlanmış kahve çeşitleri, taze pastalar, hafif atıştırmalıklar ve özel
-                    içeceklerle misafirlerine eşsiz bir deneyim sunar. Her detayında kaliteli malzeme ve sevgiyle
-                    hazırlanmış tarifler bulunur.
-                    Baristalarımızın ustalığı ve özenli servisimiz sayesinde, her fincanda kendinizi özel hissetmeniz
-                    amaçlanır.
-                    Kahvenin kokusuyla başlayan yolculuğunuz, rahat ve şık dekorumuzda geçireceğiniz keyifli anlarla
-                    devam eder.
+                    Café Lumière, özenle hazırlanmış kahve çeşitleri, taze pastalar, hafif atıştırmalıklar ve özel içeceklerle misafirlerine eşsiz bir deneyim sunar. Her detayında kaliteli malzeme ve sevgiyle hazırlanmış tarifler bulunur.
                 </p>
             </div>
+            <div class="about-us-right-side reveal fade-right">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1763272594094-946e5be3ccbe?q=80&w=1170&auto=format&fit=crop" alt="Hakkımızda Görseli">
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="about-us-right-side">
-                <img src="https://images.unsplash.com/photo-1763272594094-946e5be3ccbe?q=80&w=1170&auto=format&fit=crop"
-                    alt="Hakkımızda Görseli">
+    <section class="menu-section section-padding" id="menu-section">
+        <div class="container">
+            <h2 class="section-title text-center reveal fade-bottom">Menümüz</h2>
+            <div class="menu-buttons reveal fade-bottom">
+                <button class="menu-btn active" data-filter="sicak">Sıcak Kahveler</button>
+                <button class="menu-btn" data-filter="soguk">Soğuk Kahveler</button>
+                <button class="menu-btn" data-filter="tatli">Tatlılar</button>
+            </div>
+
+            <div class="menu-category sicak active-category">
+                <div class="menu-grid">
+                    <div class="menu-card glass-card reveal fade-bottom">
+                        <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Espresso</h3><span>70 TL</span>
+                            </div>
+                            <p>Yoğun, aromatik tek shot kahve</p>
+                        </div>
+                    </div>
+                    <div class="menu-card glass-card reveal fade-bottom" style="transition-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=687" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Americano</h3><span>120 TL</span>
+                            </div>
+                            <p>Sade, dengeli sıcak su & espresso</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+             <div class="menu-category soguk" style="display:none;">
+                <div class="menu-grid">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1517959105821-eaf2591984ca?q=80&w=873" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Ice Americano</h3><span>100 TL</span>
+                            </div>
+                            <p>Soğuk, ferah Americano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="menu-category tatli" style="display:none;">
+                <div class="menu-grid">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?q=80&w=1171" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Cheesecake</h3><span>140 TL</span>
+                            </div>
+                            <p>Kremamsı dokusu ve yumuşak taban.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- CALL US -->
-    <section class="call-us">
-        <h1 class="call-us-title">Rezervasyon ister misiniz?</h1>
-        <h2 class="call-us-subtitle">Café Lumière’de size özel bir masa ayıralım. Bir mesaj ya da arama yeterli.</h2>
-
-        <div class="call-us-container">
-            <a href="https://wa.me/905555555555" class="call-us-btn-whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i> Mesaj Atabilirsiniz
-            </a>
-
-            <a href="tel:+905555555555" class="call-us-btn-phone">
-                <i class="fa-solid fa-phone"></i> Arayabilirsiniz
-            </a>
+    <section id="galeri" class="gallery-section section-padding">
+        <div class="container text-center">
+            <h2 class="section-title reveal fade-bottom">Galeri</h2>
+            <div class="gallery-buttons reveal fade-bottom">
+                <button class="gallery-btn active" data-filter="dis">Dış Mekan</button>
+                <button class="gallery-btn" data-filter="ic">İç Mekan</button>
+                <button class="gallery-btn" data-filter="urun">Ürünler</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item dis reveal scale-up">
+                    <img src="https://images.unsplash.com/photo-1534986136417-89b28be6a379?q=80&w=1170&auto=format&fit=crop" alt="Dış Mekan">
+                </div>
+                <div class="gallery-item ic reveal scale-up" style="display: none;">
+                    <img src="https://plus.unsplash.com/premium_photo-1664191866124-0e4e81508f3c?q=80&w=686&auto=format&fit=crop" alt="İç Mekan">
+                </div>
+                <div class="gallery-item urun reveal scale-up" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=687&auto=format&fit=crop" alt="Ürünler">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- MENU -->
-    <section class="menu-section" id="menu-section">
-        <h1 class="menu-title">Menümüz</h1>
-        <div class="menu-buttons">
-            <button class="menu-btn" data-filter="sicak">Kahveler</button>
-            <button class="menu-btn" data-filter="soguk">Soğuk Kahveler</button>
-            <button class="menu-btn" data-filter="tatli">Tatlılar</button>
-        </div>
-
-
-        <!-- Kahveler -->
-        <div class="menu-category sicak">
-            <h2 class="category-title">Kahveler</h2>
-
-            <div class="menu-grid">
-
-                <!-- Espresso -->
-                <div class="menu-card">
-                    <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Espresso</h3>
-                            <span>70 TL</span>
-                        </div>
-                        <p>Yoğun, aromatik tek shot kahve</p>
-                    </div>
-                </div>
-
-                <!-- Americano -->
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=687" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Americano</h3>
-                            <span>120 TL</span>
-                        </div>
-                        <p>Sade, dengeli sıcak su & espresso</p>
-                    </div>
-                </div>
-
-                <!-- Latte -->
-                <div class="menu-card">
-                    <img src="https://plus.unsplash.com/premium_photo-1674327105280-b86494dfc690?q=80&w=687"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Latte</h3>
-                            <span>80 TL</span>
-                        </div>
-                        <p>Yumuşak içim, süt köpüğüyle</p>
-                    </div>
-                </div>
-
-                <!-- Cappuccino -->
-                <div class="menu-card">
-                    <img src="https://plus.unsplash.com/premium_photo-1670445287762-372300cdcb77?q=80&w=687"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Cappuccino</h3>
-                            <span>110 TL</span>
-                        </div>
-                        <p>Dengeli süt, espresso, kalın köpük</p>
-                    </div>
-                </div>
-
-                <!-- Türk Kahvesi -->
-                <div class="menu-card">
-                    <img src="https://plus.unsplash.com/premium_photo-1732818133657-f118e2b7c11f?q=80&w=687"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Türk Kahvesi</h3>
-                            <span>50 TL</span>
-                        </div>
-                        <p>Geleneksel, bol köpüklü</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Soğuk Kahveler -->
-        <div class="menu-category soguk">
-            <h2 class="category-title">Soğuk Kahveler</h2>
-
-            <div class="menu-grid">
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1517959105821-eaf2591984ca?q=80&w=873" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Ice Americano</h3>
-                            <span>100 TL</span>
-                        </div>
-                        <p>Soğuk, ferah Americano</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://plus.unsplash.com/premium_photo-1726804881341-bfc9554ad94f?q=80&w=1091"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Ice Latte</h3>
-                            <span>80 TL</span>
-                        </div>
-                        <p>Soğuk süt & espresso</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1626595444746-59219e6838ac?q=80&w=687" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Ice Caramel Latte</h3>
-                            <span>85 TL</span>
-                        </div>
-                        <p>Karamelli ve hafif tatlı</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1561641377-f7456d23aa9b?q=80&w=1026" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Cold Brew</h3>
-                            <span>130 TL</span>
-                        </div>
-                        <p>16 saat demleme soğuk kahve</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1628510502260-43977e781454?q=80&w=869" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Cold Brew Latte</h3>
-                            <span>130 TL</span>
-                        </div>
-                        <p>Yumuşak süt & cold brew karışımı</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Tatlılar -->
-        <div class="menu-category tatli">
-            <h2 class="category-title">Tatlılar</h2>
-
-            <div class="menu-grid">
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?q=80&w=1171"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Cheesecake</h3>
-                            <span>140 TL</span>
-                        </div>
-                        <p>Kremamsı dokusu ve yumuşak taban.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1682313128997-9e49e4288ab8?q=80&w=687" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>San Sebastian</h3>
-                            <span>150 TL</span>
-                        </div>
-                        <p>Akışkan yapısı ve yoğun peynir aroması.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?q=80&w=1024"
-                        class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Çikolatalı Pasta</h3>
-                            <span>120 TL</span>
-                        </div>
-                        <p>Yoğun çikolata sosu ve yumuşak kek.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=687" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Brownie</h3>
-                            <span>110 TL</span>
-                        </div>
-                        <p>Dışı kıtır, içi yoğun çikolatalı.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=735" class="menu-img">
-                    <div class="menu-info">
-                        <div class="menu-header">
-                            <h3>Tiramisu</h3>
-                            <span>130 TL</span>
-                        </div>
-                        <p>Kedi dili & mascarpone kreması.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <section id="gallery" class="gallery-section">
-        <h1 class="gallery-title">Galeri</h1>
-
-        <!-- Kategori Butonları -->
-        <div class="gallery-buttons">
-            <button class="gallery-btn" data-filter="dis">Dış Mekan</button>
-            <button class="gallery-btn" data-filter="ic">İç Mekan</button>
-            <button class="gallery-btn" data-filter="urun">Ürünler</button>
-        </div>
-
-        <!-- Galeri Grid -->
-        <div class="gallery-grid" id="galeri">
-
-            <div class="gallery-item dis">
-                <img src="https://images.unsplash.com/photo-1534986136417-89b28be6a379?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-
-            <div class="gallery-item dis">
-                <img src="https://images.unsplash.com/photo-1542372147193-a7aca54189cd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-            <div class="gallery-item dis">
-                <img src="https://images.unsplash.com/photo-1518739745383-0ef26e9dd7fd?q=80&w=1142&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-
-
-            <div class="gallery-item ic">
-                <img src="https://plus.unsplash.com/premium_photo-1664191866124-0e4e81508f3c?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-            <div class="gallery-item ic">
-                <img src="https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-
-            <div class="gallery-item ic">
-                <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-
-            <div class="gallery-item urun">
-                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-
-            <div class="gallery-item urun">
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="">
-            </div>
-
-            <div class="gallery-item urun">
-                <img src="https://images.unsplash.com/photo-1530174883092-c2a7aa3f1cfe?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="">
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- CONTACT & MAP -->
-    <section class="contact-map" id="contact-map">
-        <div class="contact-map-container">
-            <!-- CONTACT CARD -->
-            <div class="contact-card">
-                <h3 class="contact-title">Bize Ulaşın</h3>
-
-                <p class="contact-line"><strong>Adres:</strong> <span id="address-text">Adresiniz burada (örn.
-                        Cadde,
-                        Semt, Şehir)</span></p>
-                <p class="contact-line"><strong>Telefon:</strong> <a href="tel:+905555555555">+90 555 555 55 55</a>
-                </p>
-                <p class="contact-line"><strong>E-posta:</strong> <a
-                        href="mailto:info@cafelumiere.com">info@cafelumiere.com</a></p>
-
-                <div class="contact-actions">
-                    <a class="btn-reserve whatsapp" href="https://wa.me/905555555555" target="_blank">
+    <section class="contact-map section-padding" id="contact-map">
+        <div class="container contact-map-container">
+            <div class="contact-card glass-card reveal fade-right">
+                <h3 class="contact-title text-gradient">Bize Ulaşın</h3>
+                <p class="contact-line"><strong>Adres:</strong> Lumière Cad. No:1, İstanbul</p>
+                <p class="contact-line"><strong>Telefon:</strong> <a href="tel:+905555555555">+90 555 555 55 55</a></p>
+                <p class="contact-line"><strong>E-posta:</strong> <a href="mailto:info@cafelumiere.com">info@cafelumiere.com</a></p>
+                <div class="contact-actions mt-4">
+                    <a class="btn-glow whatsapp" href="https://wa.me/905555555555" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i> WhatsApp
                     </a>
-                    <a class="btn-reserve phone" href="tel:+905555555555">
-                        <i class="fa-solid fa-phone"></i> Ara
-                    </a>
                 </div>
-
-                <div class="opening-hours">
-                    <h4>Çalışma Saatleri</h4>
-                    <p>Hafta içi: 12:00 - 22:30</p>
-                    <p>Hafta sonu: 14:30 - 22:30</p>
-                </div>
-
             </div>
-            <!-- MAP IFRAME -->
-            <div class="map-card">
-                <!--
-        Replace "YOUR_ADDRESS_QUERY" with your address or a Google Maps embed URL.
-        Example query: "Beyoglu+Istanbul" or a full embed link.
-      -->
-                <iframe title="Café Lumière Konum" src="https://www.google.com/maps?q=YOUR_ADDRESS_QUERY&output=embed"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-card reveal fade-left">
+                <iframe src="https://www.google.com/maps/embed?..." loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="footer-container">
+    <footer class="site-footer glass">
+        <div class="container footer-container">
             <div class="footer-brand">
                 <h3 class="footer-logo"><i class="fa-solid fa-mug-saucer"></i> Café Lumière</h3>
-                <p class="footer-desc">Özel çekirdekler, taze tatlılar ve sıcak bir atmosfer.</p>
+                <p class="footer-desc">Yeni nesil kahve deneyimi.</p>
             </div>
-
-            <div class="footer-links">
-                <h4>Kısayollar</h4>
-                <ul>
-                    <li><a href="#menu">Menü</a></li>
-                    <li><a href="#about">Hakkımızda</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                </ul>
-            </div>
-
             <div class="footer-social">
-                <h4>Bizi Takip Edin</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
-                </div>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© <span id="year"></span> Café Lumière — Tüm hakları saklıdır.</p>
         </div>
     </footer>
 
-
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
